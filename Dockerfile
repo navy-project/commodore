@@ -23,4 +23,4 @@ ADD . /var/dev/
 RUN bundle install
 
 
-CMD ["bundle", "exec", "commodore"]
+CMD ["bundle", "exec", "bin/commodore"]
