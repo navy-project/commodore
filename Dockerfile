@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.1
 
 RUN gem install thor
 RUN gem install etcd
@@ -23,4 +23,4 @@ ADD . /var/dev/
 RUN bundle install
 
 
-CMD bundle exec commodore
+CMD ["bundle", "exec", "commodore"]
